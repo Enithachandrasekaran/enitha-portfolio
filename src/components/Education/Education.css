@@ -1,0 +1,99 @@
+.education__timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  position: relative;
+}
+
+.education__timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border-strong);
+}
+
+.education__item {
+  position: relative;
+  padding-left: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.education__item:last-child {
+  padding-bottom: 0;
+}
+
+.education__dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  box-shadow: 0 0 0 4px var(--surface-2);
+}
+
+.education__card {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.15rem 1.25rem;
+}
+
+.education__card-top {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.65rem;
+}
+
+.education__logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 4px;
+}
+
+.education__school {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.2rem;
+}
+
+.education__degree {
+  margin: 0 0 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+.education__range {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.education__grade {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  background: var(--accent);
+  padding: 0.15rem 0.55rem;
+  border-radius: 6px;
+}
+
+.education__detail {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}

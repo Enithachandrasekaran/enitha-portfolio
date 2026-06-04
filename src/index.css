@@ -1,0 +1,201 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-primary: #f5f5f5;
+  --color-brand-accent: #ffdb70;
+  --color-brand-accent-hover: #f0cc55;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+:root {
+  --bg: #121212;
+  --surface: #1e1e1f;
+  --surface-2: #1a1a1b;
+  --surface-3: #161618;
+  --surface-alt: #1a1a1b;
+  --surface-warm: #1e1e1f;
+  --primary: #f5f5f5;
+  --text-primary: #f5f5f5;
+  --text-on-primary: #121212;
+  --text-body: #c4c4c4;
+  --text-muted: #a0a0a0;
+  --accent: #ffdb70;
+  --accent-2: #ffe08a;
+  --accent-hover: #f0cc55;
+  --border: hsla(0, 0%, 100%, 0.08);
+  --border-strong: hsla(0, 0%, 100%, 0.14);
+  --code-bg: hsla(0, 0%, 100%, 0.06);
+  --accent-bg: hsla(45, 100%, 72%, 0.12);
+  --accent-border: hsla(45, 100%, 72%, 0.35);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --radius-card: 20px;
+  --radius-panel: 20px;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --header-scroll-pad: 5.5rem;
+  --header-pad-y: 0.85rem;
+  --header-pad-y-lg: 1rem;
+  --header-pad-x: 1.25rem;
+  --header-pad-x-lg: 1.75rem;
+  --header-nav-font-size: 0.9rem;
+  --header-nav-link-py: 0.5rem;
+  --header-nav-link-px: 0.25rem;
+  --header-icon-btn-size: 2.75rem;
+
+  font: 16px/1.62 var(--font-body);
+  color-scheme: dark;
+  color: var(--text-body);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin: 0;
+}
+
+h2 {
+  font-size: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+code {
+  font-family: var(--mono);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.88em;
+  padding: 3px 8px;
+  background: var(--code-bg);
+}
+
+.section-block {
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.25rem, 3vw, 2rem);
+}
+
+.section-block__inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-block__eyebrow {
+  display: none;
+}
+
+.section-block__title {
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.section-block__title::after {
+  display: none;
+}
+
+.section-block__title--icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.section-block__subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: -0.75rem 0 1.75rem;
+  max-width: none;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s, transform 0.15s;
+}
+
+.btn--accent {
+  background: var(--accent);
+  color: #1a1a1a;
+}
+
+.btn--accent:hover {
+  filter: brightness(1.08);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.btn--outline:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

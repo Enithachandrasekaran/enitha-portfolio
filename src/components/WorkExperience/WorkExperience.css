@@ -1,0 +1,92 @@
+.work-experience__card {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.5rem 1.35rem;
+}
+
+.work-experience__card-edge {
+  display: none;
+}
+
+.work-experience__head {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.work-experience__logo-link {
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+  line-height: 0;
+}
+
+.work-experience__logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.work-experience__company a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.work-experience__company a:hover {
+  color: var(--accent);
+}
+
+.work-experience__tagline {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.work-experience__role {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+.work-experience__range {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.work-experience__bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.work-experience__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background: var(--accent);
+}
+
+.work-experience__cta:hover {
+  filter: brightness(1.08);
+}
+
+.work-experience__cta-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
