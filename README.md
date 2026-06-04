@@ -28,6 +28,12 @@ Copy `.env.example` to `.env` and set:
 
 Never commit `.env` (it is in `.gitignore`).
 
+## Deploy (GitHub Pages + LinkedIn)
+
+See **[DEPLOY.md](./DEPLOY.md)** for step-by-step: create repo, push, go live, add link on LinkedIn.
+
+**Live URL:** https://enithachandrasekaran.github.io/enitha-portfolio/
+
 ## Author
 
 **Enitha C** — [GitHub](https://github.com/Enithachandrasekaran) · [LinkedIn](https://www.linkedin.com/in/enitha-c-2174a6230/)
