@@ -5,6 +5,7 @@ import {
   IconDownload,
   SocialIcon,
 } from '../Icons/Icons'
+import { assetUrl } from '../../utils/assetUrl'
 import './Sidebar.css'
 
 const CONTACT = [
@@ -70,7 +71,7 @@ function Sidebar() {
         >
           <img
             className="sidebar__avatar"
-            src={avatar}
+            src={assetUrl(avatar)}
             alt="Enitha C — profile photo"
             width={160}
             height={160}
@@ -133,7 +134,7 @@ function Sidebar() {
 
         <Motion.a
           className="sidebar__resume btn btn--accent"
-          href="/resume.pdf"
+          href={assetUrl('/resume.pdf')}
           target="_blank"
           rel="noreferrer"
           whileHover={reduce ? undefined : { scale: 1.02 }}

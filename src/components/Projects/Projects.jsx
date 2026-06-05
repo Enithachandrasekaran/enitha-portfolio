@@ -1,6 +1,7 @@
 import { AnimatePresence, motion as Motion, useReducedMotion } from 'framer-motion'
 import { useMemo, useState } from 'react'
 import { IconExternalLink, IconFolder } from '../Icons/Icons'
+import { assetUrl } from '../../utils/assetUrl'
 import './Projects.css'
 
 const MotionLi = Motion.li
@@ -235,7 +236,7 @@ function Projects() {
                 {p.thumb ? (
                   <img
                     className="projects__thumb"
-                    src={p.thumb}
+                    src={assetUrl(p.thumb)}
                     alt=""
                     width={640}
                     height={400}

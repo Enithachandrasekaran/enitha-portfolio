@@ -1,5 +1,6 @@
 import { IconGraduation } from '../Icons/Icons'
 import MotionStagger, { MotionStaggerItem } from '../Motion/MotionStagger'
+import { assetUrl } from '../../utils/assetUrl'
 import './Education.css'
 
 const ENTRIES = [
@@ -44,7 +45,7 @@ function Education() {
                 <div className="education__card-top">
                   <img
                     className="education__logo"
-                    src={e.logo}
+                    src={assetUrl(e.logo)}
                     alt={e.logoAlt}
                     width={72}
                     height={72}

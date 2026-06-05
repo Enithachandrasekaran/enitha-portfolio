@@ -46,18 +46,19 @@ git push -u origin main
 
 ## Step 3 — Turn on GitHub Pages (free hosting)
 
+The workflow builds your site and publishes the **`dist`** folder to the **`gh-pages`** branch.
+
 1. Open **https://github.com/Enithachandrasekaran/enitha-portfolio**
-2. **Settings** → **Pages** (left sidebar)
-3. Under **Build and deployment** → **Source:** choose **GitHub Actions** (not “Deploy from a branch”)
-4. If you previously set **Branch: main**, remove it — branch deploy will conflict with Actions and cause failures.
-5. Wait 2–5 minutes after push. Open **Actions** — “Deploy portfolio to GitHub Pages” should show a green checkmark.
-6. Visit **https://enithachandrasekaran.github.io/enitha-portfolio/**
+2. **Settings** → **Pages**
+3. **Source:** **Deploy from a branch**
+4. **Branch:** **`gh-pages`** · folder **`/ (root)`** → **Save**
+5. **Do not** use **`main`** — that serves raw source and causes **404** errors (`/src/main.jsx` not found).
+6. Wait 2–5 minutes. **Actions** → “Deploy portfolio to GitHub Pages” should be green.
+7. Visit **https://enithachandrasekaran.github.io/enitha-portfolio/**
 
-### If deployment failed (red X)
+### If you see 404 / blank page
 
-1. **Settings → Pages → Source** must be **GitHub Actions**
-2. Open the failed run in **Actions** → click the red step → read the error
-3. Push the latest workflow fix, then **Actions → Run workflow** on `main`
+Your Pages source is probably still **`main`**. Switch it to **`gh-pages`** as above, then hard-refresh (Ctrl+Shift+R).
 
 ---
 

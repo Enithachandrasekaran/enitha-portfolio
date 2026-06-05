@@ -1,5 +1,6 @@
 import { IconBriefcase } from '../Icons/Icons'
 import MotionStagger, { MotionStaggerItem } from '../Motion/MotionStagger'
+import { assetUrl } from '../../utils/assetUrl'
 import './Experience.css'
 
 const ROLES = [
@@ -47,7 +48,7 @@ function Experience() {
                 <div className="experience__head-left">
                   <img
                     className="experience__logo"
-                    src={job.logo}
+                    src={assetUrl(job.logo)}
                     alt={job.logoAlt}
                     width={52}
                     height={52}

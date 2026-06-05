@@ -1,4 +1,5 @@
 import { IconExternalLink, IconWordpress } from '../Icons/Icons'
+import { assetUrl } from '../../utils/assetUrl'
 import './WorkExperience.css'
 
 const COMPANY = {
@@ -38,7 +39,7 @@ function WorkExperience() {
             >
               <img
                 className="work-experience__logo"
-                src={COMPANY.logo}
+                src={assetUrl(COMPANY.logo)}
                 alt={COMPANY.logoAlt}
                 width={88}
                 height={88}
