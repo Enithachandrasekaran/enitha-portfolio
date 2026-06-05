@@ -26,10 +26,10 @@ function App() {
               <Skills />
             </MotionReveal>
             <MotionReveal delay={0.06}>
-              <Experience />
+              <WorkExperience />
             </MotionReveal>
             <MotionReveal delay={0.08}>
-              <WorkExperience />
+              <Experience />
             </MotionReveal>
             <MotionReveal delay={0.1}>
               <Projects />

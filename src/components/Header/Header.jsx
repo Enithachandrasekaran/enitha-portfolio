@@ -4,8 +4,8 @@ import './Header.css'
 const NAV = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Resume' },
-  { id: 'experience', label: 'Experience' },
   { id: 'work-experience', label: 'Work' },
+  { id: 'experience', label: 'Internship' },
   { id: 'projects', label: 'Portfolio' },
   { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },

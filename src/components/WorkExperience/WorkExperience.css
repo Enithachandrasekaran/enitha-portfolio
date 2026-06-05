@@ -1,3 +1,8 @@
+.work-experience__stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
 .work-experience__card {
   background: var(--surface-3);
   border: 1px solid var(--border);

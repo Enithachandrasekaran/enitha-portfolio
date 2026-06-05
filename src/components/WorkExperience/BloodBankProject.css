@@ -1,0 +1,8 @@
+.blood-bank.experience__card--project::before {
+  display: none;
+}
+
+.blood-bank.experience__card--project {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}

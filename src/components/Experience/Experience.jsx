@@ -1,4 +1,4 @@
-import { IconBriefcase } from '../Icons/Icons'
+import { IconGraduation } from '../Icons/Icons'
 import MotionStagger, { MotionStaggerItem } from '../Motion/MotionStagger'
 import { assetUrl } from '../../utils/assetUrl'
 import './Experience.css'
@@ -35,12 +35,13 @@ function Experience() {
     <section id="experience" className="section-block experience">
       <div className="section-block__inner">
         <h2 className="section-block__title section-block__title--icon">
-          <IconBriefcase className="section-title__icon" />
-          Experience
+          <IconGraduation className="section-title__icon" />
+          Internship
         </h2>
         <p className="section-block__subtitle">
           Internships and industry training that shaped my practical skills.
         </p>
+
         <MotionStagger className="experience__list">
           {ROLES.map((job) => (
             <MotionStaggerItem key={job.company + job.range} className="experience__card">
