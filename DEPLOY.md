@@ -48,9 +48,16 @@ git push -u origin main
 
 1. Open **https://github.com/Enithachandrasekaran/enitha-portfolio**
 2. **Settings** → **Pages** (left sidebar)
-3. Under **Build and deployment** → **Source:** choose **GitHub Actions**
-4. Wait 2–5 minutes after your first push. Open the **Actions** tab — the “Deploy portfolio to GitHub Pages” workflow should turn green.
-5. Visit **https://enithachandrasekaran.github.io/enitha-portfolio/**
+3. Under **Build and deployment** → **Source:** choose **GitHub Actions** (not “Deploy from a branch”)
+4. If you previously set **Branch: main**, remove it — branch deploy will conflict with Actions and cause failures.
+5. Wait 2–5 minutes after push. Open **Actions** — “Deploy portfolio to GitHub Pages” should show a green checkmark.
+6. Visit **https://enithachandrasekaran.github.io/enitha-portfolio/**
+
+### If deployment failed (red X)
+
+1. **Settings → Pages → Source** must be **GitHub Actions**
+2. Open the failed run in **Actions** → click the red step → read the error
+3. Push the latest workflow fix, then **Actions → Run workflow** on `main`
 
 ---
 
