@@ -57,8 +57,8 @@ function Skills() {
           the way.
         </p>
 
-        <h3 className="skills__bars-title">My skills</h3>
-        <ul className="skills__bars">
+        <h3 className="skills__rings-title">My skills</h3>
+        <ul className="skills__rings">
           {SKILL_BARS.map(({ name, pct }) => (
             <SkillBar key={name} name={name} pct={pct} />
           ))}
