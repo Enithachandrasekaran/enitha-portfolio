@@ -63,21 +63,21 @@ Recruiters can quickly see:
 
 ## Screenshots
 
-### About
+### Home page
 
-![About section — sidebar and intro](docs/screenshots/desktop.png)
+![About section — sidebar and intro](screenshots/home-page.png)
 
 ### Work experience
 
-![Work experience — GegoSoft and Blood Bank project](docs/screenshots/work.png)
+![Work experience — GegoSoft and Blood Bank project](screenshots/work-experience.png)
 
 ### Internship
 
-![Internship — v7lancers and Gateway training](docs/screenshots/internship.png)
+![Internship — v7lancers and Gateway training](screenshots/internship.png)
 
 ### Portfolio
 
-![Portfolio — WordPress project grid with filters](docs/screenshots/projects.png)
+![Portfolio — WordPress project grid with filters](screenshots/portfolio.png)
 
 [View live demo](https://enithachandrasekaran.github.io/enitha-portfolio/)
 
@@ -136,21 +136,37 @@ Open [http://localhost:5173](http://localhost:5173).
 ## Project structure
 
 ```
-src/
-├── components/
-│   ├── About/          # About + "What I'm doing" grid
-│   ├── Skills/         # Ring skills + skill groups
-│   ├── WorkExperience/ # GegoSoft + Blood Bank project
-│   ├── Experience/     # Internships
-│   ├── Projects/       # Portfolio with filters
-│   ├── Education/      # MCA / BCA timeline
-│   ├── Contact/        # Web3Forms contact form
-│   ├── Sidebar/        # Profile, social, CV download
-│   └── Motion/         # Reusable animation wrappers
-├── data/               # Shared content (e.g. Blood Bank project)
-└── utils/              # assetUrl() for GitHub Pages paths
-public/                 # Images, logos, profile photo
-.github/workflows/      # Auto-deploy to gh-pages
+enitha-portfolio/
+│
+├── src/
+│   ├── components/
+│   │   ├── About/
+│   │   ├── Skills/
+│   │   ├── WorkExperience/
+│   │   ├── Experience/
+│   │   ├── Projects/
+│   │   ├── Education/
+│   │   ├── Contact/
+│   │   ├── Sidebar/
+│   │   └── Motion/
+│   ├── data/
+│   └── utils/
+│
+├── public/             # Profile photo, logos, project images
+│
+├── screenshots/
+│   ├── home-page.png
+│   ├── work-experience.png
+│   ├── internship.png
+│   └── portfolio.png
+│
+├── scripts/
+│   └── capture-screenshots.mjs
+│
+├── .github/workflows/  # Auto-deploy to gh-pages
+├── README.md
+├── package.json
+└── vite.config.js
 ```
 
 ---

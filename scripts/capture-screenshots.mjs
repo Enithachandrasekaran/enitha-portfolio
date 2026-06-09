@@ -2,7 +2,7 @@ import { chromium } from 'playwright'
 import { mkdir } from 'node:fs/promises'
 
 const BASE = process.env.SCREENSHOT_URL || 'http://localhost:5173'
-const OUT = 'docs/screenshots'
+const OUT = 'screenshots'
 
 await mkdir(OUT, { recursive: true })
 
@@ -17,10 +17,9 @@ async function shot(name, { width, height, hash = '', fullPage = false }) {
   console.log(`Saved ${OUT}/${name}`)
 }
 
-await shot('desktop.png', { width: 1440, height: 900, hash: '#about' })
-await shot('mobile.png', { width: 390, height: 844, hash: '#about' })
-await shot('skills.png', { width: 1440, height: 900, hash: '#skills' })
-await shot('projects.png', { width: 1440, height: 900, hash: '#projects' })
-await shot('work.png', { width: 1440, height: 900, hash: '#work-experience' })
+await shot('home-page.png', { width: 1440, height: 900, hash: '#about' })
+await shot('work-experience.png', { width: 1440, height: 900, hash: '#work-experience' })
+await shot('internship.png', { width: 1440, height: 900, hash: '#experience' })
+await shot('portfolio.png', { width: 1440, height: 900, hash: '#projects' })
 
 await browser.close()
