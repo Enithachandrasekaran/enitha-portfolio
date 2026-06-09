@@ -1,20 +1,20 @@
 # Screenshots
 
-Add portfolio screenshots here for the main [README](../README.md).
+Portfolio screenshots for the main [README](../../README.md).
 
-**Recommended files:**
+| File | Section |
+|------|---------|
+| `desktop.png` | About — desktop (1440×900) |
+| `mobile.png` | About — mobile (390×844) |
+| `skills.png` | Resume / skills rings |
+| `projects.png` | Portfolio project grid |
+| `work.png` | Work experience (GegoSoft + Blood Bank) |
 
-| File | What to capture |
-|------|-----------------|
-| `desktop.png` | Full desktop view — sidebar + About/Skills |
-| `mobile.png` | Mobile view — nav + profile section |
-| `projects.png` | Projects grid with filters (optional) |
-| `work.png` | Work experience section (optional) |
+## Re-capture after UI changes
 
-**How to capture**
+```bash
+npm run dev
+node scripts/capture-screenshots.mjs
+```
 
-1. Open [live site](https://enithachandrasekaran.github.io/enitha-portfolio/) or `npm run dev`
-2. Use browser DevTools → toggle device toolbar for mobile
-3. Screenshot (Win: `Win + Shift + S`) and save as PNG in this folder
-
-After adding images, they appear automatically in the README on GitHub.
+Requires Playwright (one-time): `npm install --no-save playwright && npx playwright install chromium`

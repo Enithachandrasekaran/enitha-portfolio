@@ -63,15 +63,19 @@ Recruiters can quickly see:
 
 ## Screenshots
 
-> Add images to `docs/screenshots/` and they will render here on GitHub.
+### Desktop & mobile
 
 | Desktop | Mobile |
 |---------|--------|
 | ![Portfolio desktop](docs/screenshots/desktop.png) | ![Portfolio mobile](docs/screenshots/mobile.png) |
 
-*Until screenshots are added, view the [live demo](https://enithachandrasekaran.github.io/enitha-portfolio/).*
+### Skills, projects & work experience
 
-**Suggested captures:** full homepage, Skills rings, Projects grid, Work experience (GegoSoft + Blood Bank), Contact form.
+| Skills | Projects | Work experience |
+|--------|----------|-----------------|
+| ![Skills section](docs/screenshots/skills.png) | ![Projects section](docs/screenshots/projects.png) | ![Work experience section](docs/screenshots/work.png) |
+
+[View live demo](https://enithachandrasekaran.github.io/enitha-portfolio/)
 
 ---
 
