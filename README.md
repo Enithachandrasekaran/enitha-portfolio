@@ -1,39 +1,173 @@
-# Enitha C — Portfolio
+# Enitha C — Developer Portfolio
 
-Personal portfolio site (Vite + React) with WordPress/React developer profile, projects, experience, and contact form.
+[![Live Demo](https://img.shields.io/badge/demo-live-ffdb70?style=for-the-badge&logo=githubpages&logoColor=121212)](https://enithachandrasekaran.github.io/enitha-portfolio/)
+[![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646cff?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-## Setup
+> Personal portfolio for **Enitha C** — WordPress & React developer from Madurai, India. Showcases live client work, professional experience, skills, education, and a working contact form.
+
+**Live demo:** [enithachandrasekaran.github.io/enitha-portfolio](https://enithachandrasekaran.github.io/enitha-portfolio/)
+
+---
+
+## Project overview
+
+A responsive, dark-themed portfolio built with **Vite + React**. It uses a vCard-style layout (sidebar profile + scrollable main panel) and is deployed on **GitHub Pages**.
+
+Recruiters can quickly see:
+
+- Who I am and what I do (About)
+- Skills with animated ring progress (Resume)
+- **Work experience** — GegoSoft WordPress role + Blood Bank Management System (React client project)
+- **Internships** — v7lancers, Gateway Solution Technology
+- **13 live WordPress/WooCommerce projects** with filters
+- Education (MCA, BCA) and contact form
+
+---
+
+## Features
+
+| Area | Highlights |
+|------|------------|
+| **Layout** | Sticky sidebar, horizontal nav, smooth scroll anchors |
+| **Animations** | Framer Motion scroll reveals, staggered cards, skill ring fills |
+| **Skills** | Circular progress rings + skill group cards (Front-end, Tools, CMS, Certifications) |
+| **Projects** | Filter by WordPress / WooCommerce / Freelance with project thumbnails |
+| **Work** | GegoSoft WordPress developer role + full Blood Bank project breakdown |
+| **Contact** | Web3Forms integration (name, email, phone, message) |
+| **Responsive** | Mobile-friendly sidebar, nav toggle, adaptive grids |
+| **Deploy** | GitHub Actions → `gh-pages` branch (auto on push to `main`) |
+| **A11y** | `prefers-reduced-motion` support, semantic sections, ARIA labels |
+
+---
+
+## Technologies used
+
+**Frontend**
+
+- React 19, Vite 8
+- Framer Motion — animations
+- Tailwind CSS 4 — utility styling
+- Custom CSS — vCard dark theme (`#121212`, gold accent `#ffdb70`)
+
+**Tooling**
+
+- ESLint, React Compiler (Babel)
+- GitHub Actions — CI deploy to GitHub Pages
+
+**Integrations**
+
+- [Web3Forms](https://web3forms.com) — contact form (no backend required)
+
+---
+
+## Screenshots
+
+> Add images to `docs/screenshots/` and they will render here on GitHub.
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Portfolio desktop](docs/screenshots/desktop.png) | ![Portfolio mobile](docs/screenshots/mobile.png) |
+
+*Until screenshots are added, view the [live demo](https://enithachandrasekaran.github.io/enitha-portfolio/).*
+
+**Suggested captures:** full homepage, Skills rings, Projects grid, Work experience (GegoSoft + Blood Bank), Contact form.
+
+---
+
+## Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 18+ (22 recommended)
+- npm
+
+### Steps
 
 ```bash
+# Clone the repository
+git clone https://github.com/Enithachandrasekaran/enitha-portfolio.git
+cd enitha-portfolio
+
+# Install dependencies
 npm install
+
+# Environment variables (contact form)
 cp .env.example .env
-# Add your Web3Forms key: https://web3forms.com
+```
+
+Edit `.env`:
+
+```env
+VITE_CONTACT_RECEIVER_EMAIL=your-email@example.com
+VITE_WEB3FORMS_ACCESS_KEY=your-web3forms-key
+```
+
+Get a free key at [web3forms.com](https://web3forms.com).
+
+```bash
+# Start development server
 npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+---
 
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Local dev server |
+| `npm run dev` | Local dev server with hot reload |
 | `npm run build` | Production build → `dist/` |
-| `npm run preview` | Preview production build |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
 
-## Contact form
+---
 
-Copy `.env.example` to `.env` and set:
+## Project structure
 
-- `VITE_CONTACT_RECEIVER_EMAIL`
-- `VITE_WEB3FORMS_ACCESS_KEY`
+```
+src/
+├── components/
+│   ├── About/          # About + "What I'm doing" grid
+│   ├── Skills/         # Ring skills + skill groups
+│   ├── WorkExperience/ # GegoSoft + Blood Bank project
+│   ├── Experience/     # Internships
+│   ├── Projects/       # Portfolio with filters
+│   ├── Education/      # MCA / BCA timeline
+│   ├── Contact/        # Web3Forms contact form
+│   ├── Sidebar/        # Profile, social, CV download
+│   └── Motion/         # Reusable animation wrappers
+├── data/               # Shared content (e.g. Blood Bank project)
+└── utils/              # assetUrl() for GitHub Pages paths
+public/                 # Images, logos, profile photo
+.github/workflows/      # Auto-deploy to gh-pages
+```
 
-Never commit `.env` (it is in `.gitignore`).
+---
 
-## Deploy (GitHub Pages + LinkedIn)
+## Deployment
 
-See **[DEPLOY.md](./DEPLOY.md)** for step-by-step: create repo, push, go live, add link on LinkedIn.
+Push to `main` → GitHub Actions builds and publishes to **`gh-pages`**.
 
-**Live URL:** https://enithachandrasekaran.github.io/enitha-portfolio/
+**Pages settings:** Deploy from branch → **`gh-pages`** / `(root)`
+
+Full guide: **[DEPLOY.md](./DEPLOY.md)**
+
+---
 
 ## Author
 
-**Enitha C** — [GitHub](https://github.com/Enithachandrasekaran) · [LinkedIn](https://www.linkedin.com/in/enitha-c-2174a6230/)
+**Enitha C**
+
+- Portfolio: [enithachandrasekaran.github.io/enitha-portfolio](https://enithachandrasekaran.github.io/enitha-portfolio/)
+- GitHub: [@Enithachandrasekaran](https://github.com/Enithachandrasekaran)
+- LinkedIn: [enitha-c-2174a6230](https://www.linkedin.com/in/enitha-c-2174a6230/)
+- Email: enitha2002c@gmail.com
+
+---
+
+## License
+
+This project is for personal portfolio use. Project screenshots and client site references belong to their respective owners.
