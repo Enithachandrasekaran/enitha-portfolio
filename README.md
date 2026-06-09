@@ -63,17 +63,21 @@ Recruiters can quickly see:
 
 ## Screenshots
 
-### Desktop & mobile
+### About
 
-| Desktop | Mobile |
-|---------|--------|
-| ![Portfolio desktop](docs/screenshots/desktop.png) | ![Portfolio mobile](docs/screenshots/mobile.png) |
+![About section — sidebar and intro](docs/screenshots/desktop.png)
 
-### Skills, projects & work experience
+### Work experience
 
-| Skills | Projects | Work experience |
-|--------|----------|-----------------|
-| ![Skills section](docs/screenshots/skills.png) | ![Projects section](docs/screenshots/projects.png) | ![Work experience section](docs/screenshots/work.png) |
+![Work experience — GegoSoft and Blood Bank project](docs/screenshots/work.png)
+
+### Internship
+
+![Internship — v7lancers and Gateway training](docs/screenshots/internship.png)
+
+### Portfolio
+
+![Portfolio — WordPress project grid with filters](docs/screenshots/projects.png)
 
 [View live demo](https://enithachandrasekaran.github.io/enitha-portfolio/)
 
