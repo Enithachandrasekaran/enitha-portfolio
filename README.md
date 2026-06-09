@@ -17,7 +17,7 @@ A responsive, dark-themed portfolio built with **Vite + React**. It uses a vCard
 Recruiters can quickly see:
 
 - Who I am and what I do (About)
-- Skills with animated ring progress (Resume)
+- Skills and certifications (Resume)
 - **Work experience** — GegoSoft WordPress role + Blood Bank Management System (React client project)
 - **Internships** — v7lancers, Gateway Solution Technology
 - **13 live WordPress/WooCommerce projects** with filters
@@ -30,8 +30,8 @@ Recruiters can quickly see:
 | Area | Highlights |
 |------|------------|
 | **Layout** | Sticky sidebar, horizontal nav, smooth scroll anchors |
-| **Animations** | Framer Motion scroll reveals, staggered cards, skill ring fills |
-| **Skills** | Circular progress rings + skill group cards (Front-end, Tools, CMS, Certifications) |
+| **Animations** | Framer Motion scroll reveals, staggered cards |
+| **Skills** | Skill group cards (Front-end, Tools, CMS, Certifications) |
 | **Projects** | Filter by WordPress / WooCommerce / Freelance with project thumbnails |
 | **Work** | GegoSoft WordPress developer role + full Blood Bank project breakdown |
 | **Contact** | Web3Forms integration (name, email, phone, message) |

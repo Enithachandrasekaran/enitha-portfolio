@@ -1,15 +1,6 @@
 import { GroupIcon, IconAward } from '../Icons/Icons'
 import MotionStagger, { MotionStaggerItem } from '../Motion/MotionStagger'
-import SkillBar from './SkillBar'
 import './Skills.css'
-
-const SKILL_BARS = [
-  { name: 'WordPress', pct: 92 },
-  { name: 'HTML / CSS', pct: 90 },
-  { name: 'JavaScript', pct: 85 },
-  { name: 'React', pct: 78 },
-  { name: 'Bootstrap / Tailwind', pct: 88 },
-]
 
 const GROUPS = [
   {
@@ -56,13 +47,6 @@ function Skills() {
           with Elementor and Divi, databases—and formal certifications earned along
           the way.
         </p>
-
-        <h3 className="skills__rings-title">My skills</h3>
-        <ul className="skills__rings">
-          {SKILL_BARS.map(({ name, pct }) => (
-            <SkillBar key={name} name={name} pct={pct} />
-          ))}
-        </ul>
 
         <MotionStagger as="div" className="skills__grid">
           {GROUPS.map(({ title, items, longPills }) => (
